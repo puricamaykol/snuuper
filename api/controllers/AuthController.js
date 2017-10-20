@@ -20,5 +20,5 @@ exports.login = function(req, res) {
 	        return res
 	        	.status(200)
 	            .json({success:true, user:user, token: services.createToken(user)});
-	    }).catch(err=>{return res.status(404).json({msg: 'User not found'})});
+	    }).catch(err=>{return res.status(404).json({success:false, msg: 'User not found'})});
 };
