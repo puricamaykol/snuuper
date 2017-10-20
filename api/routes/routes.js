@@ -3,7 +3,7 @@ module.exports = function(app) {
   let UsersController = require('../controllers/UsersController');
   let AuthController = require('../controllers/AuthController');
   let services = require('../services');
-
+ //Definicion de las rutas REST para el modelo Users
   app.get('/api/users',UsersController.getAll);
 
   app.get('/api/users/:userId',UsersController.findOne);

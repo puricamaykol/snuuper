@@ -1,6 +1,9 @@
 let db = require('./index.js');
 
-
+ /**
+  * Definición del modelo de Sequelize para el usuario
+  * @type {[type]}
+  */
   const User = db.sequelize.define('MOCK_DATA', {
   id: {
     type: db.Sequelize.INTEGER,
