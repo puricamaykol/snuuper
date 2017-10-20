@@ -1,8 +1,5 @@
-Welcome to StackEdit!
-===================
-
 Prueba realizada para snuuper
-----------
+===================
 
 Instalation
 ===================
