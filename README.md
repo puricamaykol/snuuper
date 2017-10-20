@@ -1,8 +1,7 @@
 Welcome to StackEdit!
 ===================
 
-Prueba realizada para smartBox TV
-
+Prueba realizada para snuuper
 ----------
 
 Instalation
