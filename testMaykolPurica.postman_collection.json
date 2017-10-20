@@ -1,0 +1,441 @@
+{
+	"variables": [],
+	"info": {
+		"name": "testMaykolPurica",
+		"_postman_id": "ba4edd04-51e5-e8cf-1f7d-6b6b6e61f857",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all",
+			"request": {
+				"url": "http://localhost:3000/api/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Obtiene todos los usuarios"
+			},
+			"response": []
+		},
+		{
+			"name": "Get one",
+			"request": {
+				"url": "http://localhost:3000/api/users/ljasdkljalksjdl",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Obtiene un usuario por su id"
+			},
+			"response": []
+		},
+		{
+			"name": "GET one usuario no existente",
+			"request": {
+				"url": "http://localhost:3000/api/users/ljasdkljalksjdl",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Probando la respuesta cuando se envía un id que no existe"
+			},
+			"response": []
+		},
+		{
+			"name": "POST ",
+			"request": {
+				"url": "http://localhost:3000/api/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Patton",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "last_name",
+							"value": "Tapscott",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "kiwkkeuuuu@spiegel.de",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "vFStrrnk4s",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "Username",
+							"value": "ptapscott0",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": "Crea un usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "POST con parametro errados",
+			"request": {
+				"url": "http://localhost:3000/api/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Patton",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "last_nameTapscott",
+							"value": "",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "emailkiwkkeuuuu@spiegel.de",
+							"value": "",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "vFStrrnk4s",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "Username",
+							"value": "ptapscott0",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": "Probando los mensajes de error"
+			},
+			"response": []
+		},
+		{
+			"name": "POST email repetido",
+			"request": {
+				"url": "http://localhost:3000/api/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Patton",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "last_name",
+							"value": "Tapscott",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "kiwkkeuuuu@spiegel.de",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "vFStrrnk4s",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "Username",
+							"value": "ptapscott0",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": "Se prueba la respuesta cuando se intenta ingresar un email ya existente"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE user",
+			"request": {
+				"url": "http://localhost:3000/api/users/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Patton7",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "last_name",
+							"value": "Tapscott",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "kiwkkeuuuu@spiegel.de",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "vFStrrnk4s",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "Username",
+							"value": "ptapscott0",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": "Actualiza un usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"url": "http://localhost:3000/api/users/100",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Patton7",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "last_name",
+							"value": "Tapscott",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "kiwkkeuuuu@spiegel.de",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "vFStrrnk4s",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "Username",
+							"value": "ptapscott0",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": "Elimina un usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "POST LOGIN",
+			"request": {
+				"url": "http://localhost:3000/api/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ptapscott0",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "vFStrrnk4s",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": "Autentica al usuario y devuelve un token "
+			},
+			"response": []
+		},
+		{
+			"name": "POST LOGIN datos erroneos",
+			"request": {
+				"url": "http://localhost:3000/api/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ptapscott0",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "vFStrrnk4skdkdkdk",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Ruta Prvada",
+			"request": {
+				"url": "http://localhost:3000/private/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTUwODUyMTQwOSwiZXhwIjoxNTA5MTI2MjA5fQ.QO2fdHHOQWFAYKJWNm9qCsTecohG6Mz6B9uxW40obEU",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ptapscott0979879879",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "vFStrrnk4s",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": "probando una ruta que requiera de un token valido enviado en la cabecera de autorizacion"
+			},
+			"response": []
+		},
+		{
+			"name": "Ruta privada con token erroneo",
+			"request": {
+				"url": "http://localhost:3000/private/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJjjKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlhdCI6MTUwODUyMTQwOSwiZXhwIjoxNTA5MTI2MjA5fQ.QO2fdHHOQWFAYKJWNm9qCsTecohG6Mz6B9uxW40obEU",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ptapscott0979879879",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "vFStrrnk4s",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

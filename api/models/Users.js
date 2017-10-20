@@ -4,7 +4,8 @@ let db = require('./index.js');
   const User = db.sequelize.define('MOCK_DATA', {
   id: {
     type: db.Sequelize.INTEGER,
-    primaryKey: true
+    primaryKey: true,
+    autoIncrement: true
   },
   first_name: {
     type: db.Sequelize.STRING,
@@ -16,7 +17,8 @@ let db = require('./index.js');
   },
   email: {
     type: db.Sequelize.STRING,
-    allowNull: false
+    allowNull: false,
+    unique: true
   },
   password: {
     type: db.Sequelize.STRING,
