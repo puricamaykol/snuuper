@@ -6,6 +6,9 @@ Instalation
 
  `$ npm install`
  
+ DB
+===================
+Correr el archivo sql que se encuentra en la raíz del proyecto
 
 Set Database and Token secret
 ===================
