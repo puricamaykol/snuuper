@@ -1,5 +1,5 @@
 module.exports = {
-  TOKEN_SECRET: process.env.TOKEN_SECRET || "tokenultrasecreto",
+  secret: process.env.secret || "987987987987899234892348",
   DB: {
   	name: 'PRUEBA',
   	user: 'root',

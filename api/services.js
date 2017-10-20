@@ -11,7 +11,7 @@ if(!user) {
     iat: moment().unix(),
     exp: moment().add(7, "days").unix(),
   };
-  return jwt.encode(payload, config.TOKEN_SECRET);
+  return jwt.encode(payload, config.secret);
 };
 
 exports.validateToken = function(req, res, next) {
@@ -22,7 +22,7 @@ exports.validateToken = function(req, res, next) {
 	      .json({msg: "Cabecera de authorization no encontrada"});
 	  }
 	  let token = req.headers.authorization.split(" ")[1];
-	  let payload = jwt.decode(token, config.TOKEN_SECRET);
+	  let payload = jwt.decode(token, config.secret);
 	  
 	  if(payload.exp <= moment().unix()) {
 	     return res

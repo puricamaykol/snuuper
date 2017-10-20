@@ -21,7 +21,7 @@
 		{
 			"name": "Get one",
 			"request": {
-				"url": "http://localhost:3000/api/users/ljasdkljalksjdl",
+				"url": "http://localhost:3000/api/users/1",
 				"method": "GET",
 				"header": [],
 				"body": {},
